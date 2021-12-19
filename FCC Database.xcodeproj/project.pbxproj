@@ -176,6 +176,7 @@
 		4D672344276D4F03008563F8 = {
 			isa = PBXGroup;
 			children = (
+				4D8CBA44276FBE720064BB58 /* FCC Database */,
 				4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */,
 				4D2332F2276EC2E100CFF21B /* Documentation */,
 				4D23330E276EC2F600CFF21B /* Sample Data */,
@@ -199,14 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6723A4276D5553008563F8 /* FCC-Database-2-Info.plist */,
-				4D67239E276D5403008563F8 /* Assets.xcassets */,
-				4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */,
 				4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */,
-				4D67237B276D4FF4008563F8 /* Models */,
-				4D672388276D5005008563F8 /* View Models */,
-				4D67238D276D5016008563F8 /* Views */,
-				4D672396276D5020008563F8 /* Utilities */,
-				4D672356276D4F04008563F8 /* Preview Content */,
 			);
 			path = "FCC Database 2";
 			sourceTree = "<group>";
@@ -267,6 +261,20 @@
 				4D672398276D5020008563F8 /* UtilityExtensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4D8CBA44276FBE720064BB58 /* FCC Database */ = {
+			isa = PBXGroup;
+			children = (
+				4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */,
+				4D67239E276D5403008563F8 /* Assets.xcassets */,
+				4D67237B276D4FF4008563F8 /* Models */,
+				4D672388276D5005008563F8 /* View Models */,
+				4D67238D276D5016008563F8 /* Views */,
+				4D672396276D5020008563F8 /* Utilities */,
+				4D672356276D4F04008563F8 /* Preview Content */,
+			);
+			path = "FCC Database";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,7 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FCC Database 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FCC\\ Database/Preview\\ Content";
 				DEVELOPMENT_TEAM = 566Y4FXUU7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -621,7 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FCC Database 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FCC\\ Database/Preview\\ Content";
 				DEVELOPMENT_TEAM = 566Y4FXUU7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
