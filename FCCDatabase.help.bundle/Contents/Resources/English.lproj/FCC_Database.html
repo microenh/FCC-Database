@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- transitional.dtd"
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>FCC Database Help</title>
+        <style>
+          .img-container {
+            text-align: center;
+          }
+        </style>
+    </head>
+
+    <body lang="en-US" dir="ltr"><p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+
+        <div class="img-container"><img src="../shrd/FCC_Seal_1934.png" name="FCC Seal" width="200" height="200"?</img></div>
+
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent"><span lang="en-US">
+            <b>FCC Database</b> is a small application to access callsign information from
+            the FCC’s amateur radio callsign database. The FCC provides
+            downloads of this data every week (currently they are updated Sunday
+            evenings). The user can download the latest file at his/her
+            discretion. The data is stored locally providing near instant lookups
+            without the need for an internet connection. If an internet
+            connection is available the application will use Apple’s geocoding
+            services to determine the latitude and longitude of the station
+            address and display a map. The program will also compute the
+            maidenhead grid square (6 digits, i.e. AA00aa) and display the
+            distance and heading from a reference location.
+        </span></span></font></font></font></p>
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            The program requires no installation, simply launch the icon (above). The
+            program was compiled as a universal binary to run on Intel or Apple
+            silicon. It requires at least OSX 11.5 (Big Sur) and will run under
+            12.0 (Monterey).
+        </span></font></font></font></p>
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            Launch the program and select the Preferences… option under the FCC Database menu.
+        </span></font></font></font></p>
+
+        <div class="img-container"><img src="../shrd/Preferences.png" name="Preferences"></img></div>
+
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent"><span lang="en-US">
+            The Database Date: is the date of the FCC database file that is currently
+            in use. When the program is first started, it will be blank. While
+            connected to the internet, click on the Update from FCC button. A
+            progress bar will display as the file is downloaded. The current file
+            is around 160 MB. That is followed by displays of the various steps
+            used in converting the downloaded file to a local database. The
+            length of time for the download step depends on the speed of the
+            internet connection. The processing step should only take a couple of
+            minutes. Once the database has been processed, the date will be
+            displayed.
+        </span></span></font></font></font></p>
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            The next step is to enter reference coordinates. These are in decimal
+            degrees latitude (top entry box) and longitude. For latitude,
+            positive numbers are for the northern hemisphere and negative are for
+            the southern hemisphere. For longitude, negative is for the western
+            hemisphere and positive is for the eastern hemisphere. For most US
+            locations, the latitude will be positive and the longitude will be
+            negative.  While the coordinates can be manually entered, it is
+            easier to enter the coordinates from the station currently displayed
+            in the main window. Look up a callsign and click on the "Use callsign"
+            button to set the coordinates from that location as reference
+            for the distance and heading calculations. Alternatively, for computers equipped
+            with a GPS receiver, click the "Use GPS" button to use the current GPS coordinates.
+            For the GPS to work, the FCC Database application needs permission to access Location Services.
+        </span></font></font></font></p>
+
+        <div class="img-container"><img src="../shrd/Security.png" name="Security"></img></div>
+
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            The program can listen for callsign change broadcasts via UDP. Enter the UDP port number.
+            Changes to the UDP port number require a program restart.
+        </span></font></font></font></p>
+
+
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent"><span lang="en-US">
+            To lookup a station, enter the callsign in the Call box and hit the
+            ENTER key or click the Lookup button. The + and - buttons at the
+            bottom of the map can zoom in and out and the map can be dragged to
+            reposition the center. When a new lookup is made, the map zoom level
+            is retained, but the new map is again centered on the station.
+        </span></span></font></font></font></p>
+
+        <div class="img-container"><img src="../shrd/Main.png" name="Main"></img></div>
+
+
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            Note: the windows can be resized and the sizes will be used when the
+            program is restarted.
+        </span></font></font></font></p>
+        <p align="left" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; orphans: 2; widows: 2; text-decoration: none; page-break-before: auto; page-break-after: auto">
+        <font color="#000000"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 11pt"><span style="background: transparent">
+            Mark Erbaugh, N8ME<br/>13-December-2021
+        </span></font></font></font></p>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppInfo>
+    <Application>RUMlogNG</Application>
+    <AppVersion>RUMlogNG 5.6.8</AppVersion>
+    <StationName>Mark’s Mac mini</StationName>
+    <dbname>N8ME Main Log.rlog</dbname>
+    <ShownDxcc>K</ShownDxcc>
+    <HdgToDxcc>90</HdgToDxcc>
+    <ShownDxccLocation>EM89hu</ShownDxccLocation>
+    <ShownStation>N8ME/8</ShownStation>
+    <HdgToStation>-1</HdgToStation>
+    <ShownStationLocation></ShownStationLocation>
+    <CurrentBand>40m</CurrentBand>
+</AppInfo>

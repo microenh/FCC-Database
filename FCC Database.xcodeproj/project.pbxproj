@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D233303276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F5276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf */; };
+		4D233304276EC2E100CFF21B /* fcc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F7276EC2E100CFF21B /* fcc.sh */; };
+		4D233305276EC2E100CFF21B /* fcc4.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F8276EC2E100CFF21B /* fcc4.sh */; };
+		4D233306276EC2E100CFF21B /* fcc3.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F9276EC2E100CFF21B /* fcc3.sh */; };
+		4D233307276EC2E100CFF21B /* fcc2.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FA276EC2E100CFF21B /* fcc2.sh */; };
+		4D233308276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FC276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf */; };
+		4D233309276EC2E100CFF21B /* uls_code_definitions_20201222.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FD276EC2E100CFF21B /* uls_code_definitions_20201222.txt */; };
+		4D23330A276EC2E100CFF21B /* public_access_database_definitions_v6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FE276EC2E100CFF21B /* public_access_database_definitions_v6.pdf */; };
+		4D23330B276EC2E100CFF21B /* special_cond_code_20210329.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FF276EC2E100CFF21B /* special_cond_code_20210329.txt */; };
+		4D23330C276EC2E100CFF21B /* pubacc_intro_11122014.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D233300276EC2E100CFF21B /* pubacc_intro_11122014.pdf */; };
+		4D23330D276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */; };
+		4D233311276EC2F600CFF21B /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D23330F276EC2F600CFF21B /* sample.xml */; };
+		4D3FDE25276EC58900BDE400 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3FDE24276EC58900BDE400 /* SQLite */; };
+		4D672351276D4F03008563F8 /* FCC_DatabaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */; };
+		4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D672357276D4F04008563F8 /* Preview Assets.xcassets */; };
+		4D672363276D4F04008563F8 /* FCC_Database_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */; };
+		4D67236D276D4F04008563F8 /* FCC_Database_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */; };
+		4D67236F276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */; };
+		4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237C276D4FF4008563F8 /* ServerConnection.swift */; };
+		4D672383276D4FF4008563F8 /* CacheDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237D276D4FF4008563F8 /* CacheDatabase.swift */; };
+		4D672384276D4FF4008563F8 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237E276D4FF4008563F8 /* Server.swift */; };
+		4D672385276D4FF4008563F8 /* CallDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237F276D4FF4008563F8 /* CallDatabase.swift */; };
+		4D672386276D4FF4008563F8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672380276D4FF4008563F8 /* Parser.swift */; };
+		4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672381276D4FF4008563F8 /* ProcessZip.swift */; };
+		4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672389276D5005008563F8 /* LocationViewModel.swift */; };
+		4D67238C276D5005008563F8 /* FCCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238A276D5005008563F8 /* FCCData.swift */; };
+		4D672392276D5016008563F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238E276D5016008563F8 /* MapView.swift */; };
+		4D672393276D5016008563F8 /* LicenseLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238F276D5016008563F8 /* LicenseLookupView.swift */; };
+		4D672394276D5016008563F8 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672390276D5016008563F8 /* LicenseView.swift */; };
+		4D672395276D5016008563F8 /* FCCDatabaseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */; };
+		4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */; };
+		4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672398276D5020008563F8 /* UtilityExtensions.swift */; };
+		4D67239F276D5403008563F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D67239E276D5403008563F8 /* Assets.xcassets */; };
+		4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D67235F276D4F04008563F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D672345276D4F03008563F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D67234C276D4F03008563F8;
+			remoteInfo = "FCC Database 2";
+		};
+		4D672369276D4F04008563F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D672345276D4F03008563F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D67234C276D4F03008563F8;
+			remoteInfo = "FCC Database 2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D2332F5276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "How to calculate your 8-digit grid square.pdf"; sourceTree = "<group>"; };
+		4D2332F7276EC2E100CFF21B /* fcc.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fcc.sh; sourceTree = "<group>"; };
+		4D2332F8276EC2E100CFF21B /* fcc4.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fcc4.sh; sourceTree = "<group>"; };
+		4D2332F9276EC2E100CFF21B /* fcc3.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fcc3.sh; sourceTree = "<group>"; };
+		4D2332FA276EC2E100CFF21B /* fcc2.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fcc2.sh; sourceTree = "<group>"; };
+		4D2332FC276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pubacc_tbl_abbr_names_08212007.pdf; sourceTree = "<group>"; };
+		4D2332FD276EC2E100CFF21B /* uls_code_definitions_20201222.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uls_code_definitions_20201222.txt; sourceTree = "<group>"; };
+		4D2332FE276EC2E100CFF21B /* public_access_database_definitions_v6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = public_access_database_definitions_v6.pdf; sourceTree = "<group>"; };
+		4D2332FF276EC2E100CFF21B /* special_cond_code_20210329.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = special_cond_code_20210329.txt; sourceTree = "<group>"; };
+		4D233300276EC2E100CFF21B /* pubacc_intro_11122014.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pubacc_intro_11122014.pdf; sourceTree = "<group>"; };
+		4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_access_database_definitions_sql_v3_4.txt; sourceTree = "<group>"; };
+		4D23330F276EC2F600CFF21B /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		4D67234D276D4F03008563F8 /* FCC Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCC Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_DatabaseApp.swift; sourceTree = "<group>"; };
+		4D672357276D4F04008563F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCC_Database_2.entitlements; sourceTree = "<group>"; };
+		4D67235E276D4F04008563F8 /* FCC DatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2Tests.swift; sourceTree = "<group>"; };
+		4D672368276D4F04008563F8 /* FCC DatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2UITests.swift; sourceTree = "<group>"; };
+		4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D67237C276D4FF4008563F8 /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		4D67237D276D4FF4008563F8 /* CacheDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheDatabase.swift; sourceTree = "<group>"; };
+		4D67237E276D4FF4008563F8 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		4D67237F276D4FF4008563F8 /* CallDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallDatabase.swift; sourceTree = "<group>"; };
+		4D672380276D4FF4008563F8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4D672381276D4FF4008563F8 /* ProcessZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessZip.swift; sourceTree = "<group>"; };
+		4D672389276D5005008563F8 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		4D67238A276D5005008563F8 /* FCCData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCData.swift; sourceTree = "<group>"; };
+		4D67238E276D5016008563F8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4D67238F276D5016008563F8 /* LicenseLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseLookupView.swift; sourceTree = "<group>"; };
+		4D672390276D5016008563F8 /* LicenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
+		4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDatabaseSettings.swift; sourceTree = "<group>"; };
+		4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinated2D Extension.swift"; sourceTree = "<group>"; };
+		4D672398276D5020008563F8 /* UtilityExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
+		4D67239E276D5403008563F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCCDatabase.help.bundle; sourceTree = "<group>"; };
+		4D6723A4276D5553008563F8 /* FCC-Database-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FCC-Database-2-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D67234A276D4F03008563F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3FDE25276EC58900BDE400 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D67235B276D4F04008563F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D672365276D4F04008563F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D2332F2276EC2E100CFF21B /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				4D2332F3276EC2E100CFF21B /* Misc */,
+				4D2332F6276EC2E100CFF21B /* Conversion Bash Scripts */,
+				4D2332FB276EC2E100CFF21B /* FCC Documentation */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		4D2332F3276EC2E100CFF21B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4D2332F5276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		4D2332F6276EC2E100CFF21B /* Conversion Bash Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4D2332F7276EC2E100CFF21B /* fcc.sh */,
+				4D2332F8276EC2E100CFF21B /* fcc4.sh */,
+				4D2332F9276EC2E100CFF21B /* fcc3.sh */,
+				4D2332FA276EC2E100CFF21B /* fcc2.sh */,
+			);
+			path = "Conversion Bash Scripts";
+			sourceTree = "<group>";
+		};
+		4D2332FB276EC2E100CFF21B /* FCC Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				4D2332FC276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf */,
+				4D2332FD276EC2E100CFF21B /* uls_code_definitions_20201222.txt */,
+				4D2332FE276EC2E100CFF21B /* public_access_database_definitions_v6.pdf */,
+				4D2332FF276EC2E100CFF21B /* special_cond_code_20210329.txt */,
+				4D233300276EC2E100CFF21B /* pubacc_intro_11122014.pdf */,
+				4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */,
+			);
+			path = "FCC Documentation";
+			sourceTree = "<group>";
+		};
+		4D23330E276EC2F600CFF21B /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D23330F276EC2F600CFF21B /* sample.xml */,
+			);
+			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		4D672344276D4F03008563F8 = {
+			isa = PBXGroup;
+			children = (
+				4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */,
+				4D2332F2276EC2E100CFF21B /* Documentation */,
+				4D23330E276EC2F600CFF21B /* Sample Data */,
+				4D67234F276D4F03008563F8 /* FCC Database 2 */,
+				4D672361276D4F04008563F8 /* FCC Database 2Tests */,
+				4D67236B276D4F04008563F8 /* FCC Database 2UITests */,
+				4D67234E276D4F03008563F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D67234E276D4F03008563F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D67234D276D4F03008563F8 /* FCC Database.app */,
+				4D67235E276D4F04008563F8 /* FCC DatabaseTests.xctest */,
+				4D672368276D4F04008563F8 /* FCC DatabaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D67234F276D4F03008563F8 /* FCC Database 2 */ = {
+			isa = PBXGroup;
+			children = (
+				4D6723A4276D5553008563F8 /* FCC-Database-2-Info.plist */,
+				4D67239E276D5403008563F8 /* Assets.xcassets */,
+				4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */,
+				4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */,
+				4D67237B276D4FF4008563F8 /* Models */,
+				4D672388276D5005008563F8 /* View Models */,
+				4D67238D276D5016008563F8 /* Views */,
+				4D672396276D5020008563F8 /* Utilities */,
+				4D672356276D4F04008563F8 /* Preview Content */,
+			);
+			path = "FCC Database 2";
+			sourceTree = "<group>";
+		};
+		4D672356276D4F04008563F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4D672357276D4F04008563F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D672361276D4F04008563F8 /* FCC Database 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */,
+			);
+			path = "FCC Database 2Tests";
+			sourceTree = "<group>";
+		};
+		4D67236B276D4F04008563F8 /* FCC Database 2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */,
+				4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */,
+			);
+			path = "FCC Database 2UITests";
+			sourceTree = "<group>";
+		};
+		4D67237B276D4FF4008563F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D67237C276D4FF4008563F8 /* ServerConnection.swift */,
+				4D67237D276D4FF4008563F8 /* CacheDatabase.swift */,
+				4D67237E276D4FF4008563F8 /* Server.swift */,
+				4D67237F276D4FF4008563F8 /* CallDatabase.swift */,
+				4D672380276D4FF4008563F8 /* Parser.swift */,
+				4D672381276D4FF4008563F8 /* ProcessZip.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D672388276D5005008563F8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D672389276D5005008563F8 /* LocationViewModel.swift */,
+				4D67238A276D5005008563F8 /* FCCData.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4D67238D276D5016008563F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D67238E276D5016008563F8 /* MapView.swift */,
+				4D67238F276D5016008563F8 /* LicenseLookupView.swift */,
+				4D672390276D5016008563F8 /* LicenseView.swift */,
+				4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D672396276D5020008563F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */,
+				4D672398276D5020008563F8 /* UtilityExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D67234C276D4F03008563F8 /* FCC Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D672372276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC Database" */;
+			buildPhases = (
+				4D672349276D4F03008563F8 /* Sources */,
+				4D67234A276D4F03008563F8 /* Frameworks */,
+				4D67234B276D4F03008563F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FCC Database";
+			packageProductDependencies = (
+				4D3FDE24276EC58900BDE400 /* SQLite */,
+			);
+			productName = "FCC Database 2";
+			productReference = 4D67234D276D4F03008563F8 /* FCC Database.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D67235D276D4F04008563F8 /* FCC DatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D672375276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC DatabaseTests" */;
+			buildPhases = (
+				4D67235A276D4F04008563F8 /* Sources */,
+				4D67235B276D4F04008563F8 /* Frameworks */,
+				4D67235C276D4F04008563F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D672360276D4F04008563F8 /* PBXTargetDependency */,
+			);
+			name = "FCC DatabaseTests";
+			productName = "FCC Database 2Tests";
+			productReference = 4D67235E276D4F04008563F8 /* FCC DatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D672367276D4F04008563F8 /* FCC DatabaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D672378276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC DatabaseUITests" */;
+			buildPhases = (
+				4D672364276D4F04008563F8 /* Sources */,
+				4D672365276D4F04008563F8 /* Frameworks */,
+				4D672366276D4F04008563F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D67236A276D4F04008563F8 /* PBXTargetDependency */,
+			);
+			name = "FCC DatabaseUITests";
+			productName = "FCC Database 2UITests";
+			productReference = 4D672368276D4F04008563F8 /* FCC DatabaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D672345276D4F03008563F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4D67234C276D4F03008563F8 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					4D67235D276D4F04008563F8 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4D67234C276D4F03008563F8;
+					};
+					4D672367276D4F04008563F8 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4D67234C276D4F03008563F8;
+					};
+				};
+			};
+			buildConfigurationList = 4D672348276D4F03008563F8 /* Build configuration list for PBXProject "FCC Database" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D672344276D4F03008563F8;
+			packageReferences = (
+				4D3FDE23276EC58900BDE400 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
+			productRefGroup = 4D67234E276D4F03008563F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D67234C276D4F03008563F8 /* FCC Database */,
+				4D67235D276D4F04008563F8 /* FCC DatabaseTests */,
+				4D672367276D4F04008563F8 /* FCC DatabaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D67234B276D4F03008563F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D23330B276EC2E100CFF21B /* special_cond_code_20210329.txt in Resources */,
+				4D233308276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf in Resources */,
+				4D233305276EC2E100CFF21B /* fcc4.sh in Resources */,
+				4D233304276EC2E100CFF21B /* fcc.sh in Resources */,
+				4D23330D276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt in Resources */,
+				4D233303276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf in Resources */,
+				4D23330A276EC2E100CFF21B /* public_access_database_definitions_v6.pdf in Resources */,
+				4D233309276EC2E100CFF21B /* uls_code_definitions_20201222.txt in Resources */,
+				4D23330C276EC2E100CFF21B /* pubacc_intro_11122014.pdf in Resources */,
+				4D233311276EC2F600CFF21B /* sample.xml in Resources */,
+				4D67239F276D5403008563F8 /* Assets.xcassets in Resources */,
+				4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */,
+				4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */,
+				4D233307276EC2E100CFF21B /* fcc2.sh in Resources */,
+				4D233306276EC2E100CFF21B /* fcc3.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D67235C276D4F04008563F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D672366276D4F04008563F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D672349276D4F03008563F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D672393276D5016008563F8 /* LicenseLookupView.swift in Sources */,
+				4D672385276D4FF4008563F8 /* CallDatabase.swift in Sources */,
+				4D67238C276D5005008563F8 /* FCCData.swift in Sources */,
+				4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */,
+				4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */,
+				4D672386276D4FF4008563F8 /* Parser.swift in Sources */,
+				4D672383276D4FF4008563F8 /* CacheDatabase.swift in Sources */,
+				4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */,
+				4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */,
+				4D672384276D4FF4008563F8 /* Server.swift in Sources */,
+				4D672395276D5016008563F8 /* FCCDatabaseSettings.swift in Sources */,
+				4D672392276D5016008563F8 /* MapView.swift in Sources */,
+				4D672351276D4F03008563F8 /* FCC_DatabaseApp.swift in Sources */,
+				4D672394276D5016008563F8 /* LicenseView.swift in Sources */,
+				4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D67235A276D4F04008563F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D672363276D4F04008563F8 /* FCC_Database_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D672364276D4F04008563F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D67236D276D4F04008563F8 /* FCC_Database_2UITests.swift in Sources */,
+				4D67236F276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D672360276D4F04008563F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D67234C276D4F03008563F8 /* FCC Database */;
+			targetProxy = 4D67235F276D4F04008563F8 /* PBXContainerItemProxy */;
+		};
+		4D67236A276D4F04008563F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D67234C276D4F03008563F8 /* FCC Database */;
+			targetProxy = 4D672369276D4F04008563F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D672370276D4F04008563F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D672371276D4F04008563F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4D672373276D4F04008563F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = FCC_Seal;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "FCC Database 2/FCC_Database_2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FCC Database 2/Preview Content\"";
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FCC-Database-2-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D672374276D4F04008563F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = FCC_Seal;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "FCC Database 2/FCC_Database_2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FCC Database 2/Preview Content\"";
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FCC-Database-2-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4D672376276D4F04008563F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCC Database.app/Contents/MacOS/FCC Database";
+			};
+			name = Debug;
+		};
+		4D672377276D4F04008563F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCC Database.app/Contents/MacOS/FCC Database";
+			};
+			name = Release;
+		};
+		4D672379276D4F04008563F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FCC Database 2";
+			};
+			name = Debug;
+		};
+		4D67237A276D4F04008563F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 566Y4FXUU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FCC Database 2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D672348276D4F03008563F8 /* Build configuration list for PBXProject "FCC Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D672370276D4F04008563F8 /* Debug */,
+				4D672371276D4F04008563F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D672372276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D672373276D4F04008563F8 /* Debug */,
+				4D672374276D4F04008563F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D672375276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC DatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D672376276D4F04008563F8 /* Debug */,
+				4D672377276D4F04008563F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D672378276D4F04008563F8 /* Build configuration list for PBXNativeTarget "FCC DatabaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D672379276D4F04008563F8 /* Debug */,
+				4D67237A276D4F04008563F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D3FDE23276EC58900BDE400 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D3FDE24276EC58900BDE400 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D3FDE23276EC58900BDE400 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4D672345276D4F03008563F8 /* Project object */;
+}
