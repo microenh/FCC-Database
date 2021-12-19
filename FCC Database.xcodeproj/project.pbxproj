@@ -7,20 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D233303276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F5276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf */; };
-		4D233304276EC2E100CFF21B /* fcc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F7276EC2E100CFF21B /* fcc.sh */; };
-		4D233305276EC2E100CFF21B /* fcc4.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F8276EC2E100CFF21B /* fcc4.sh */; };
-		4D233306276EC2E100CFF21B /* fcc3.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332F9276EC2E100CFF21B /* fcc3.sh */; };
-		4D233307276EC2E100CFF21B /* fcc2.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FA276EC2E100CFF21B /* fcc2.sh */; };
-		4D233308276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FC276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf */; };
-		4D233309276EC2E100CFF21B /* uls_code_definitions_20201222.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FD276EC2E100CFF21B /* uls_code_definitions_20201222.txt */; };
-		4D23330A276EC2E100CFF21B /* public_access_database_definitions_v6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FE276EC2E100CFF21B /* public_access_database_definitions_v6.pdf */; };
-		4D23330B276EC2E100CFF21B /* special_cond_code_20210329.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D2332FF276EC2E100CFF21B /* special_cond_code_20210329.txt */; };
-		4D23330C276EC2E100CFF21B /* pubacc_intro_11122014.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4D233300276EC2E100CFF21B /* pubacc_intro_11122014.pdf */; };
-		4D23330D276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */; };
-		4D233311276EC2F600CFF21B /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D23330F276EC2F600CFF21B /* sample.xml */; };
 		4D3FDE25276EC58900BDE400 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3FDE24276EC58900BDE400 /* SQLite */; };
-		4D672351276D4F03008563F8 /* FCC_DatabaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */; };
+		4D672351276D4F03008563F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672350276D4F03008563F8 /* App.swift */; };
 		4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D672357276D4F04008563F8 /* Preview Assets.xcassets */; };
 		4D672363276D4F04008563F8 /* FCC_DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */; };
 		4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237C276D4FF4008563F8 /* ServerConnection.swift */; };
@@ -72,9 +60,9 @@
 		4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_access_database_definitions_sql_v3_4.txt; sourceTree = "<group>"; };
 		4D23330F276EC2F600CFF21B /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
 		4D67234D276D4F03008563F8 /* FCC Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCC Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_DatabaseApp.swift; sourceTree = "<group>"; };
+		4D672350276D4F03008563F8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4D672357276D4F04008563F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCC_Database_2.entitlements; sourceTree = "<group>"; };
+		4D672359276D4F04008563F8 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		4D67235E276D4F04008563F8 /* FCC DatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_DatabaseTests.swift; sourceTree = "<group>"; };
 		4D672368276D4F04008563F8 /* FCC DatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +82,7 @@
 		4D672398276D5020008563F8 /* UtilityExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
 		4D67239E276D5403008563F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCCDatabase.help.bundle; sourceTree = "<group>"; };
-		4D6723A4276D5553008563F8 /* FCC-Database-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FCC-Database-2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4D6723A4276D5553008563F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FCC Database/Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +168,7 @@
 				4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */,
 				4D2332F2276EC2E100CFF21B /* Documentation */,
 				4D23330E276EC2F600CFF21B /* Sample Data */,
-				4D67234F276D4F03008563F8 /* FCC Database 2 */,
-				4D672361276D4F04008563F8 /* FCC DatabaseTests */,
+				4D672361276D4F04008563F8 /* FCC Database Tests */,
 				4D67234E276D4F03008563F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -196,15 +183,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4D67234F276D4F03008563F8 /* FCC Database 2 */ = {
-			isa = PBXGroup;
-			children = (
-				4D6723A4276D5553008563F8 /* FCC-Database-2-Info.plist */,
-				4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */,
-			);
-			path = "FCC Database 2";
-			sourceTree = "<group>";
-		};
 		4D672356276D4F04008563F8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,12 +191,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4D672361276D4F04008563F8 /* FCC DatabaseTests */ = {
+		4D672361276D4F04008563F8 /* FCC Database Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */,
 			);
-			path = "FCC DatabaseTests";
+			path = "FCC Database Tests";
 			sourceTree = "<group>";
 		};
 		4D67237B276D4FF4008563F8 /* Models */ = {
@@ -266,7 +244,9 @@
 		4D8CBA44276FBE720064BB58 /* FCC Database */ = {
 			isa = PBXGroup;
 			children = (
-				4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */,
+				4D6723A4276D5553008563F8 /* Info.plist */,
+				4D672359276D4F04008563F8 /* Entitlements.entitlements */,
+				4D672350276D4F03008563F8 /* App.swift */,
 				4D67239E276D5403008563F8 /* Assets.xcassets */,
 				4D67237B276D4FF4008563F8 /* Models */,
 				4D672388276D5005008563F8 /* View Models */,
@@ -387,21 +367,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D23330B276EC2E100CFF21B /* special_cond_code_20210329.txt in Resources */,
-				4D233308276EC2E100CFF21B /* pubacc_tbl_abbr_names_08212007.pdf in Resources */,
-				4D233305276EC2E100CFF21B /* fcc4.sh in Resources */,
-				4D233304276EC2E100CFF21B /* fcc.sh in Resources */,
-				4D23330D276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt in Resources */,
-				4D233303276EC2E100CFF21B /* How to calculate your 8-digit grid square.pdf in Resources */,
-				4D23330A276EC2E100CFF21B /* public_access_database_definitions_v6.pdf in Resources */,
-				4D233309276EC2E100CFF21B /* uls_code_definitions_20201222.txt in Resources */,
-				4D23330C276EC2E100CFF21B /* pubacc_intro_11122014.pdf in Resources */,
-				4D233311276EC2F600CFF21B /* sample.xml in Resources */,
 				4D67239F276D5403008563F8 /* Assets.xcassets in Resources */,
 				4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */,
 				4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */,
-				4D233307276EC2E100CFF21B /* fcc2.sh in Resources */,
-				4D233306276EC2E100CFF21B /* fcc3.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +406,7 @@
 				4D672384276D4FF4008563F8 /* Server.swift in Sources */,
 				4D672395276D5016008563F8 /* FCCDatabaseSettings.swift in Sources */,
 				4D672392276D5016008563F8 /* MapView.swift in Sources */,
-				4D672351276D4F03008563F8 /* FCC_DatabaseApp.swift in Sources */,
+				4D672351276D4F03008563F8 /* App.swift in Sources */,
 				4D672394276D5016008563F8 /* LicenseView.swift in Sources */,
 				4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */,
 			);
@@ -596,7 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = FCC_Seal;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "FCC Database 2/FCC_Database_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FCC Database/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -605,7 +573,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FCC-Database-2-Info.plist";
+				INFOPLIST_FILE = "FCC Database/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -625,7 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = FCC_Seal;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "FCC Database 2/FCC_Database_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FCC Database/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -634,7 +602,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FCC-Database-2-Info.plist";
+				INFOPLIST_FILE = "FCC Database/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
