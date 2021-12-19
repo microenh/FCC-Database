@@ -91,7 +91,7 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        let fccData = FCCData()
+        let fccData = FCCData(preview: true)
         MapView(fccData: fccData)
     }
 }

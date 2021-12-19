@@ -20,12 +20,14 @@ class FCCData: ObservableObject {
     
     private var server : Server
     
-    init() {
+    init(preview: Bool = false) {
         server = Server()
-        server.processMessage = udpDatagram
-        do {
-            try server.start()
-        } catch {
+        if !preview {
+            server.processMessage = udpDatagram
+            do {
+                try server.start()
+            } catch {
+            }
         }
     }
     

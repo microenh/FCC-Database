@@ -192,7 +192,7 @@ struct FCCDatabaseSettings: View {
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        let fccData = FCCData()
+        let fccData = FCCData(preview: true)
         fccData.byCallsignWithAddress("W8CR")
         return FCCDatabaseSettings(fccData: fccData)
     }

@@ -37,7 +37,7 @@ struct LicenseLookupView: View {
 struct LicenseListView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let fccData = FCCData()
+        let fccData = FCCData(preview: true)
         LicenseLookupView(fccData: fccData)
     }
 }

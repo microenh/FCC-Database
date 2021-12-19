@@ -131,7 +131,7 @@ struct LicenseView: View {
 struct LicenseView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let data = FCCData()
+        let data = FCCData(preview: true)
         data.byCallsignSync("N8ME")
         return LicenseView(data: data)
     }
