@@ -22,9 +22,7 @@
 		4D3FDE25276EC58900BDE400 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3FDE24276EC58900BDE400 /* SQLite */; };
 		4D672351276D4F03008563F8 /* FCC_DatabaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672350276D4F03008563F8 /* FCC_DatabaseApp.swift */; };
 		4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D672357276D4F04008563F8 /* Preview Assets.xcassets */; };
-		4D672363276D4F04008563F8 /* FCC_Database_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */; };
-		4D67236D276D4F04008563F8 /* FCC_Database_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */; };
-		4D67236F276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */; };
+		4D672363276D4F04008563F8 /* FCC_DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */; };
 		4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237C276D4FF4008563F8 /* ServerConnection.swift */; };
 		4D672383276D4FF4008563F8 /* CacheDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237D276D4FF4008563F8 /* CacheDatabase.swift */; };
 		4D672384276D4FF4008563F8 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67237E276D4FF4008563F8 /* Server.swift */; };
@@ -78,10 +76,8 @@
 		4D672357276D4F04008563F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D672359276D4F04008563F8 /* FCC_Database_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCC_Database_2.entitlements; sourceTree = "<group>"; };
 		4D67235E276D4F04008563F8 /* FCC DatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2Tests.swift; sourceTree = "<group>"; };
+		4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_DatabaseTests.swift; sourceTree = "<group>"; };
 		4D672368276D4F04008563F8 /* FCC DatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCC DatabaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2UITests.swift; sourceTree = "<group>"; };
-		4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCC_Database_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D67237C276D4FF4008563F8 /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
 		4D67237D276D4FF4008563F8 /* CacheDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheDatabase.swift; sourceTree = "<group>"; };
 		4D67237E276D4FF4008563F8 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -184,8 +180,7 @@
 				4D2332F2276EC2E100CFF21B /* Documentation */,
 				4D23330E276EC2F600CFF21B /* Sample Data */,
 				4D67234F276D4F03008563F8 /* FCC Database 2 */,
-				4D672361276D4F04008563F8 /* FCC Database 2Tests */,
-				4D67236B276D4F04008563F8 /* FCC Database 2UITests */,
+				4D672361276D4F04008563F8 /* FCC DatabaseTests */,
 				4D67234E276D4F03008563F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,21 +219,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4D672361276D4F04008563F8 /* FCC Database 2Tests */ = {
+		4D672361276D4F04008563F8 /* FCC DatabaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				4D672362276D4F04008563F8 /* FCC_Database_2Tests.swift */,
+				4D672362276D4F04008563F8 /* FCC_DatabaseTests.swift */,
 			);
-			path = "FCC Database 2Tests";
-			sourceTree = "<group>";
-		};
-		4D67236B276D4F04008563F8 /* FCC Database 2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D67236C276D4F04008563F8 /* FCC_Database_2UITests.swift */,
-				4D67236E276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift */,
-			);
-			path = "FCC Database 2UITests";
+			path = "FCC DatabaseTests";
 			sourceTree = "<group>";
 		};
 		4D67237B276D4FF4008563F8 /* Models */ = {
@@ -454,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D672363276D4F04008563F8 /* FCC_Database_2Tests.swift in Sources */,
+				4D672363276D4F04008563F8 /* FCC_DatabaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,8 +448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D67236D276D4F04008563F8 /* FCC_Database_2UITests.swift in Sources */,
-				4D67236F276D4F04008563F8 /* FCC_Database_2UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
