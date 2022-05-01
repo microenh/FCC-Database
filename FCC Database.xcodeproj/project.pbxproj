@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3F0925281F52D400482656 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F0924281F52D400482656 /* readme.md */; };
 		4D3FDE25276EC58900BDE400 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3FDE24276EC58900BDE400 /* SQLite */; };
 		4D672351276D4F03008563F8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672350276D4F03008563F8 /* App.swift */; };
 		4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D672357276D4F04008563F8 /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		4D233300276EC2E100CFF21B /* pubacc_intro_11122014.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pubacc_intro_11122014.pdf; sourceTree = "<group>"; };
 		4D233301276EC2E100CFF21B /* public_access_database_definitions_sql_v3_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_access_database_definitions_sql_v3_4.txt; sourceTree = "<group>"; };
 		4D23330F276EC2F600CFF21B /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		4D3F0924281F52D400482656 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		4D67234D276D4F03008563F8 /* FCC Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCC Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D672350276D4F03008563F8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4D672357276D4F04008563F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		4D672344276D4F03008563F8 = {
 			isa = PBXGroup;
 			children = (
+				4D3F0924281F52D400482656 /* readme.md */,
 				4D8CBA44276FBE720064BB58 /* FCC Database */,
 				4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */,
 				4D2332F2276EC2E100CFF21B /* Documentation */,
@@ -366,6 +369,7 @@
 			files = (
 				4D67239F276D5403008563F8 /* Assets.xcassets in Resources */,
 				4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */,
+				4D3F0925281F52D400482656 /* readme.md in Resources */,
 				4D672358276D4F04008563F8 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
