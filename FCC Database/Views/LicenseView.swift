@@ -120,7 +120,13 @@ struct LicenseView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            MapView(fccData: data)
+            Map(coordinateRegion: $data.region, annotationItems: data.places) { place in
+                MapAnnotation(coordinate: place.location) {
+                    Text(place.id)
+                        .padding(.horizontal, 5)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.brown))
+                 }
+            }
                 .opacity(data.coordinates == nil ? 0 : 1)
             Text(textData)
         }

@@ -10,9 +10,16 @@ import MapKit
 
 struct FCCDatabaseSettings: View {
     @ObservedObject var fccData: FCCData
-    private var locationViewModel = LocationViewModel()
+     
+    private var nf: NumberFormatter
+    private var df: NumberFormatter
     
     init(fccData: FCCData) {
+        // print ("Settings")
+        nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        nf.minimumFractionDigits = 6
+        df = NumberFormatter()
         self.fccData = fccData
     }
     
@@ -43,12 +50,6 @@ struct FCCDatabaseSettings: View {
     let file = "l_amat.zip"
     
     var body: some View {
-        let nf = NumberFormatter()
-        nf.numberStyle = .decimal
-        nf.minimumFractionDigits = 6
-        
-        let df = NumberFormatter()
-
 
         return VStack {
             Text("Database Date:")
@@ -103,6 +104,8 @@ struct FCCDatabaseSettings: View {
                 }
                 .disabled(fccData.coordinates == nil)
                 Button ("Use GPS") {
+                    let locationViewModel = LocationViewModel()
+
                     switch locationViewModel.authorizationStatus {
                     case .authorizedAlways, .authorizedWhenInUse:
                         let coordinates = locationViewModel.lastSeenLocation ?? CLLocation()
@@ -145,23 +148,24 @@ struct FCCDatabaseSettings: View {
 
     @State private var downloadTask: URLSessionDownloadTask?
     @State private var observation: NSKeyValueObservation?
+    
 
     private func downloadFCCAsync() {
 //        let cacheURL =  FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
 //        print (cacheURL)
 
-        
+
         guard let urlBase = URL(string: folder) else { return }
         let url = urlBase.appendingPathComponent(file)
 //        URLCache.shared.removeAllCachedResponses()
 //        print (url)
-        
+
         downloadTask = URLSession.shared.downloadTask(with: url) { location, response, error in
             observation?.invalidate()
             if let response = response, let hresponse = response as? HTTPURLResponse {
                 statusCode = hresponse.statusCode
             }
-            
+
             if statusCode == 200, let location = location {
                 let newName = location.deletingLastPathComponent().appendingPathComponent(file)
                 try? FileManager.default.removeItem(at: newName)

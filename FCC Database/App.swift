@@ -14,6 +14,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+struct SettingsWrapper: View {
+    @ObservedObject var fccData: FCCData
+
+    var body: some View {
+        FCCDatabaseSettings(fccData: fccData)
+    }
+}
+
 @main
 struct FCC_DatabaseApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
@@ -21,16 +29,14 @@ struct FCC_DatabaseApp: App {
 
     @StateObject private var fccData = FCCData()
     
-    var title: String {
-        fccData.callRecord?.callsign ?? Bundle.main.displayName!
-    }
-    
     var body: some Scene {
         WindowGroup {
             LicenseLookupView(fccData: fccData)
-                .navigationTitle(title)
         }
-        
+        Settings {
+            SettingsWrapper(fccData: fccData)
+        }
+    }
 // add custom About dialog
 // -----------------------
 //        .commands {
@@ -46,9 +52,6 @@ struct FCC_DatabaseApp: App {
 //                }
 //            }
 //        }
-        
-        Settings() {
-            FCCDatabaseSettings(fccData: fccData)
-        }
-    }
+    
 }
+

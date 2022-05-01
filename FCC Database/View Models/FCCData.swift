@@ -8,9 +8,24 @@
 import Foundation
 import MapKit
 
+fileprivate struct Settings {
+    static let delta = 10_000.0
+}
+
+struct IdentifiablePlace: Identifiable {
+    let id: String
+    let location: CLLocationCoordinate2D
+    init(id: String, location: CLLocationCoordinate2D) {
+        self.id = id.uppercased()
+        self.location = location
+    }
+}
+
+
 class FCCData: ObservableObject {
     @Published var coordinates: CLLocationCoordinate2D?
     @Published var callRecord: CallRecord?
+    @Published var region: MKCoordinateRegion
     
     private var callDatabase = CallDatabase()
     private var cacheDatabase = CacheDatabase()
@@ -21,6 +36,7 @@ class FCCData: ObservableObject {
     private var server : Server
     
     init(preview: Bool = false) {
+        region = MKCoordinateRegion(center: CLLocationCoordinate2D(), latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
         server = Server()
         if !preview {
             server.processMessage = udpDatagram
@@ -41,6 +57,14 @@ class FCCData: ObservableObject {
             }
         }
     }
+    
+    var places: [IdentifiablePlace] {
+        var result = [IdentifiablePlace]()
+        if call > "", let coordinates = coordinates {
+            result.append(IdentifiablePlace(id: call, location: coordinates))
+        }
+        return result
+    }
 
     func closeDatabase() {
         callDatabase.closeCallsignDatabase()
@@ -57,6 +81,9 @@ class FCCData: ObservableObject {
     func byCallsignWithAddress(_ call: String) {
         byCallsignSync(call)
         updateAddresses()
+        if let coordinates = coordinates {
+            region = MKCoordinateRegion(center: coordinates, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
+        }
     }
     
     func byCallsignSync(_ call: String) {

@@ -19,14 +19,13 @@
 		4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672381276D4FF4008563F8 /* ProcessZip.swift */; };
 		4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672389276D5005008563F8 /* LocationViewModel.swift */; };
 		4D67238C276D5005008563F8 /* FCCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238A276D5005008563F8 /* FCCData.swift */; };
-		4D672392276D5016008563F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238E276D5016008563F8 /* MapView.swift */; };
 		4D672393276D5016008563F8 /* LicenseLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238F276D5016008563F8 /* LicenseLookupView.swift */; };
 		4D672394276D5016008563F8 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672390276D5016008563F8 /* LicenseView.swift */; };
-		4D672395276D5016008563F8 /* FCCDatabaseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */; };
 		4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */; };
 		4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672398276D5020008563F8 /* UtilityExtensions.swift */; };
 		4D67239F276D5403008563F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D67239E276D5403008563F8 /* Assets.xcassets */; };
 		4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */; };
+		4DB46BCC281F082E0054663D /* FCCDatabaseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,15 +73,14 @@
 		4D672381276D4FF4008563F8 /* ProcessZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessZip.swift; sourceTree = "<group>"; };
 		4D672389276D5005008563F8 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		4D67238A276D5005008563F8 /* FCCData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCData.swift; sourceTree = "<group>"; };
-		4D67238E276D5016008563F8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4D67238F276D5016008563F8 /* LicenseLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseLookupView.swift; sourceTree = "<group>"; };
 		4D672390276D5016008563F8 /* LicenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
-		4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDatabaseSettings.swift; sourceTree = "<group>"; };
 		4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinated2D Extension.swift"; sourceTree = "<group>"; };
 		4D672398276D5020008563F8 /* UtilityExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
 		4D67239E276D5403008563F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCCDatabase.help.bundle; sourceTree = "<group>"; };
 		4D6723A4276D5553008563F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FCC Database/Info.plist"; sourceTree = SOURCE_ROOT; };
+		4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDatabaseSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,10 +222,9 @@
 		4D67238D276D5016008563F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D67238E276D5016008563F8 /* MapView.swift */,
 				4D67238F276D5016008563F8 /* LicenseLookupView.swift */,
 				4D672390276D5016008563F8 /* LicenseView.swift */,
-				4D672391276D5016008563F8 /* FCCDatabaseSettings.swift */,
+				4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,7 +321,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					4D67234C276D4F03008563F8 = {
 						CreatedOnToolsVersion = 13.2;
@@ -399,13 +396,12 @@
 				4D67238C276D5005008563F8 /* FCCData.swift in Sources */,
 				4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */,
 				4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */,
+				4DB46BCC281F082E0054663D /* FCCDatabaseSettings.swift in Sources */,
 				4D672386276D4FF4008563F8 /* Parser.swift in Sources */,
 				4D672383276D4FF4008563F8 /* CacheDatabase.swift in Sources */,
 				4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */,
 				4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */,
 				4D672384276D4FF4008563F8 /* Server.swift in Sources */,
-				4D672395276D5016008563F8 /* FCCDatabaseSettings.swift in Sources */,
-				4D672392276D5016008563F8 /* MapView.swift in Sources */,
 				4D672351276D4F03008563F8 /* App.swift in Sources */,
 				4D672394276D5016008563F8 /* LicenseView.swift in Sources */,
 				4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */,
@@ -494,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -565,6 +561,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "FCC Database/Entitlements.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -579,7 +576,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "0.7 β debug";
+				MARKETING_VERSION = "0.8 β debug";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -609,7 +606,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "0.7 β";
+				MARKETING_VERSION = "0.8 β debug";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.microenh.FCC-Database";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
