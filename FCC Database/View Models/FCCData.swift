@@ -81,9 +81,6 @@ class FCCData: ObservableObject {
     func byCallsignWithAddress(_ call: String) {
         byCallsignSync(call)
         updateAddresses()
-        if let coordinates = coordinates {
-            region = MKCoordinateRegion(center: coordinates, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
-        }
     }
     
     func byCallsignSync(_ call: String) {
@@ -98,16 +95,13 @@ class FCCData: ObservableObject {
             switch lookupResult {
             case .found (let latitude, let longitude):
                 coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                region = MKCoordinateRegion(center: coordinates!, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
             case .notFound (let key):
-                do {
-                    geocoder.geocodeAddressString(key) { regions, _ in
-                        let coordinates = regions?.first?.location?.coordinate
-                        if let coordinates = coordinates {
-                            self.cacheDatabase.saveCoordinates(for: key, latitude: coordinates.latitude, longitude: coordinates.longitude)
-                        }
-                        DispatchQueue.main.async {
-                            self.coordinates = coordinates
-                        }
+                geocoder.geocodeAddressString(key) { [weak self] regions, _ in
+                    if let coordinates = regions?.first?.location?.coordinate, let self = self {
+                        self.cacheDatabase.saveCoordinates(for: key, latitude: coordinates.latitude, longitude: coordinates.longitude)
+                        self.coordinates = coordinates
+                        self.region = MKCoordinateRegion(center: coordinates, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
                     }
                 }
             }

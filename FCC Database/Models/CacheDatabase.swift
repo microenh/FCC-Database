@@ -41,7 +41,6 @@ struct CacheDatabase {
         if let db = cacheDatabase {
             do {
                 if let row = try db.pluck(coordinates) {
-                    //print ("\(row)")
                     return GetCoordinates.found(latitude: row[CacheDatabase.latitude], longitude: row[CacheDatabase.longitude])
                 }
             } catch SQLite.Result.error {
@@ -52,7 +51,7 @@ struct CacheDatabase {
                     t.column(CacheDatabase.longitude)
                 })
             } catch {
-                // print ("\(error.self)")
+                print ("\(error.self)")
             }
         }
         return GetCoordinates.notFound(key: key)
