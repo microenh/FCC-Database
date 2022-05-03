@@ -8,19 +8,24 @@
 import SwiftUI
 import MapKit
 
+struct Preferences: View {
+    var body: some View {
+        FCCDatabaseSettings()
+    }
+}
+
 struct FCCDatabaseSettings: View {
-    @ObservedObject var fccData: FCCData
+    @EnvironmentObject var fccData: FCCData
      
     private var nf: NumberFormatter
     private var df: NumberFormatter
     
-    init(fccData: FCCData) {
+    init() {
         // print ("Settings")
         nf = NumberFormatter()
         nf.numberStyle = .decimal
         nf.minimumFractionDigits = 6
         df = NumberFormatter()
-        self.fccData = fccData
     }
     
     // geographic center of the lower 48 states (Lebanon, KS)
@@ -198,6 +203,7 @@ struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         let fccData = FCCData(preview: true)
         fccData.byCallsignWithAddress("W8CR")
-        return FCCDatabaseSettings(fccData: fccData)
+        return FCCDatabaseSettings()
+            .environmentObject(fccData)
     }
 }

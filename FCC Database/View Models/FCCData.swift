@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 
 fileprivate struct Settings {
-    static let delta = 10_000.0
+    static let delta = 100_000.0
 }
 
 struct IdentifiablePlace: Identifiable {
@@ -25,7 +25,7 @@ struct IdentifiablePlace: Identifiable {
 class FCCData: ObservableObject {
     @Published var coordinates: CLLocationCoordinate2D?
     @Published var callRecord: CallRecord?
-    @Published var region: MKCoordinateRegion
+    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(), latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
     
     private var callDatabase = CallDatabase()
     private var cacheDatabase = CacheDatabase()
@@ -33,11 +33,9 @@ class FCCData: ObservableObject {
     
     private var call: String = ""
     
-    private var server : Server
+    private var server = Server()
     
     init(preview: Bool = false) {
-        region = MKCoordinateRegion(center: CLLocationCoordinate2D(), latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
-        server = Server()
         if !preview {
             server.processMessage = udpDatagram
             do {
@@ -57,6 +55,25 @@ class FCCData: ObservableObject {
             }
         }
     }
+    
+    private func setRegion() {
+        region = MKCoordinateRegion(center: coordinates!, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
+    }
+    
+    func zoomOne() {
+        setRegion()
+    }
+    
+    func zoomIn() {
+        region.span.latitudeDelta /= 2
+        region.span.longitudeDelta /= 2
+    }
+    
+    func zoomOut() {
+        region.span.latitudeDelta *= 2
+        region.span.longitudeDelta *= 2
+    }
+
     
     var places: [IdentifiablePlace] {
         var result = [IdentifiablePlace]()
@@ -79,6 +96,7 @@ class FCCData: ObservableObject {
     }
 
     func byCallsignWithAddress(_ call: String) {
+        guard call > "" else { return }
         byCallsignSync(call)
         updateAddresses()
     }
@@ -95,13 +113,13 @@ class FCCData: ObservableObject {
             switch lookupResult {
             case .found (let latitude, let longitude):
                 coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                region = MKCoordinateRegion(center: coordinates!, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
+                setRegion()
             case .notFound (let key):
                 geocoder.geocodeAddressString(key) { [weak self] regions, _ in
                     if let coordinates = regions?.first?.location?.coordinate, let self = self {
                         self.cacheDatabase.saveCoordinates(for: key, latitude: coordinates.latitude, longitude: coordinates.longitude)
                         self.coordinates = coordinates
-                        self.region = MKCoordinateRegion(center: coordinates, latitudinalMeters: Settings.delta, longitudinalMeters: Settings.delta)
+                        self.setRegion()
                     }
                 }
             }

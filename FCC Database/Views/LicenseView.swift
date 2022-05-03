@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct LicenseView: View {
-    @ObservedObject var data: FCCData
+    @EnvironmentObject var data: FCCData
     
     @AppStorage("FCCDatabase.baseLatitude")
     private var baseLatitude = 39.8539841
@@ -120,26 +120,49 @@ struct LicenseView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Map(coordinateRegion: $data.region, annotationItems: data.places) { place in
+            Map(coordinateRegion: $data.region,
+                interactionModes: [],
+                annotationItems: data.places) { place in
                 MapAnnotation(coordinate: place.location) {
                     Text(place.id)
                         .padding(.horizontal, 5)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.brown))
+                        .background(Color.brown)
+                        .cornerRadius(10)
                  }
             }
-                .opacity(data.coordinates == nil ? 0 : 1)
+            .cornerRadius(10)
+            .opacity(data.coordinates == nil ? 0 : 1)
+            HStack {
+                Spacer()
+                Button {
+                    data.zoomIn()
+                } label: {
+                    Image(systemName: "plus.magnifyingglass")
+                }
+                Button {
+                    data.zoomOne()
+                } label: {
+                    Image(systemName: "1.magnifyingglass")
+                }
+               Button {
+                    data.zoomOut()
+                } label: {
+                    Image(systemName: "minus.magnifyingglass")
+                }
+
+            }
             Text(textData)
         }
-        .padding()
     }
 }
 
 struct LicenseView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let data = FCCData(preview: true)
-        data.byCallsignSync("N8ME")
-        return LicenseView(data: data)
+        let fccData = FCCData(preview: true)
+        fccData.byCallsignSync("N8ME")
+        return LicenseView()
+            .environmentObject(fccData)
     }
 }
 

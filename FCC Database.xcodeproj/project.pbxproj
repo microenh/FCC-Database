@@ -20,13 +20,15 @@
 		4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672381276D4FF4008563F8 /* ProcessZip.swift */; };
 		4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672389276D5005008563F8 /* LocationViewModel.swift */; };
 		4D67238C276D5005008563F8 /* FCCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238A276D5005008563F8 /* FCCData.swift */; };
-		4D672393276D5016008563F8 /* LicenseLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238F276D5016008563F8 /* LicenseLookupView.swift */; };
+		4D672393276D5016008563F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238F276D5016008563F8 /* DetailView.swift */; };
 		4D672394276D5016008563F8 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672390276D5016008563F8 /* LicenseView.swift */; };
 		4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */; };
 		4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672398276D5020008563F8 /* UtilityExtensions.swift */; };
 		4D67239F276D5403008563F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D67239E276D5403008563F8 /* Assets.xcassets */; };
 		4D6723A1276D548D008563F8 /* FCCDatabase.help.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */; };
 		4DB46BCC281F082E0054663D /* FCCDatabaseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */; };
+		4DD7A994282145A700750EBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7A993282145A700750EBE /* ContentView.swift */; };
+		4DD7A9962821463A00750EBE /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7A9952821463A00750EBE /* SidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +77,7 @@
 		4D672381276D4FF4008563F8 /* ProcessZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessZip.swift; sourceTree = "<group>"; };
 		4D672389276D5005008563F8 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		4D67238A276D5005008563F8 /* FCCData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCData.swift; sourceTree = "<group>"; };
-		4D67238F276D5016008563F8 /* LicenseLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseLookupView.swift; sourceTree = "<group>"; };
+		4D67238F276D5016008563F8 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4D672390276D5016008563F8 /* LicenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinated2D Extension.swift"; sourceTree = "<group>"; };
 		4D672398276D5020008563F8 /* UtilityExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		4D6723A0276D548D008563F8 /* FCCDatabase.help.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCCDatabase.help.bundle; sourceTree = "<group>"; };
 		4D6723A4276D5553008563F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FCC Database/Info.plist"; sourceTree = SOURCE_ROOT; };
 		4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDatabaseSettings.swift; sourceTree = "<group>"; };
+		4DD7A993282145A700750EBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DD7A9952821463A00750EBE /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +229,6 @@
 		4D67238D276D5016008563F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D67238F276D5016008563F8 /* LicenseLookupView.swift */,
 				4D672390276D5016008563F8 /* LicenseView.swift */,
 				4DB46BCA281F06DF0054663D /* FCCDatabaseSettings.swift */,
 			);
@@ -250,11 +253,22 @@
 				4D67239E276D5403008563F8 /* Assets.xcassets */,
 				4D67237B276D4FF4008563F8 /* Models */,
 				4D672388276D5005008563F8 /* View Models */,
+				4DD7A997282146E300750EBE /* Navigation */,
 				4D67238D276D5016008563F8 /* Views */,
 				4D672396276D5020008563F8 /* Utilities */,
 				4D672356276D4F04008563F8 /* Preview Content */,
 			);
 			path = "FCC Database";
+			sourceTree = "<group>";
+		};
+		4DD7A997282146E300750EBE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4DD7A993282145A700750EBE /* ContentView.swift */,
+				4D67238F276D5016008563F8 /* DetailView.swift */,
+				4DD7A9952821463A00750EBE /* SidebarView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,8 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D672393276D5016008563F8 /* LicenseLookupView.swift in Sources */,
+				4D672393276D5016008563F8 /* DetailView.swift in Sources */,
 				4D672385276D4FF4008563F8 /* CallDatabase.swift in Sources */,
+				4DD7A9962821463A00750EBE /* SidebarView.swift in Sources */,
 				4D67238C276D5005008563F8 /* FCCData.swift in Sources */,
 				4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */,
 				4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */,
@@ -406,6 +421,7 @@
 				4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */,
 				4D67239A276D5020008563F8 /* UtilityExtensions.swift in Sources */,
 				4D672384276D4FF4008563F8 /* Server.swift in Sources */,
+				4DD7A994282145A700750EBE /* ContentView.swift in Sources */,
 				4D672351276D4F03008563F8 /* App.swift in Sources */,
 				4D672394276D5016008563F8 /* LicenseView.swift in Sources */,
 				4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */,
@@ -565,7 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "FCC Database/Entitlements.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

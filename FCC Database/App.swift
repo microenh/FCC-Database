@@ -14,44 +14,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
-struct SettingsWrapper: View {
-    @ObservedObject var fccData: FCCData
-
-    var body: some View {
-        FCCDatabaseSettings(fccData: fccData)
-    }
-}
-
 @main
 struct FCC_DatabaseApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-
     @StateObject private var fccData = FCCData()
     
+    var title: String {
+        fccData.callRecord?.callsign ?? Bundle.main.displayName!
+    }
+
     var body: some Scene {
         WindowGroup {
-            LicenseLookupView(fccData: fccData)
+            ContentView()
+                .navigationTitle(title)
+                .environmentObject(fccData)
+        }
+        .commands {
+            SidebarCommands()
         }
         Settings {
-            SettingsWrapper(fccData: fccData)
+            Preferences()
+                .environmentObject(fccData)
         }
     }
-// add custom About dialog
-// -----------------------
-//        .commands {
-//            CommandGroup(replacing: CommandGroupPlacement.appInfo) {
-//                let appName = Bundle.main.displayName!
-//                Button {
-//                    NSApplication.shared.orderFrontStandardAboutPanel(
-//                        options: [
-//                            NSApplication.AboutPanelOptionKey.credits: NSAttributedString(string: "Database Date\r\(fccData.databaseDate)"),
-//                        ])
-//                } label: {
-//                    Text("About \(appName)")
-//                }
-//            }
-//        }
-    
 }
 
