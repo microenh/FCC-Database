@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selection: String?
-    
+    @Binding var selection: String?
+
     var body: some View {
         NavigationView {
             SidebarView(selection: $selection)
+                .frame(width: 100)
             DetailView(selection: $selection)
         }
     }
@@ -22,7 +23,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var fccData = FCCDataViewModel(preview: true)
     static var previews: some View {
-        ContentView(selection: nil)
+        ContentView(selection: .constant(nil))
             .environmentObject(fccData)
 
     }

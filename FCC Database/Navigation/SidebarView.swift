@@ -15,7 +15,7 @@ struct SidebarView: View {
     var body: some View {
         List(selection: $selection) {
             ForEach(data.places.keys.sorted(), id: \.self) { call in
-                Text(call)
+                Text("\(call)")
             }
         }
     }

@@ -18,17 +18,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 struct FCC_DatabaseApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var fccData = FCCDataViewModel()
+    @State var selection: String?
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(selection: $selection)
                  .environmentObject(fccData)
         }
         .commands {
             SidebarCommands()
         }
         Settings {
-            Preferences()
+            Preferences(selection: selection)
                 .environmentObject(fccData)
         }
     }

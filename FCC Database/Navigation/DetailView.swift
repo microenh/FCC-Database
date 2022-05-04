@@ -18,20 +18,19 @@ struct DetailView: View {
             LicenseView(selection: $selection)
             HStack {
                 Spacer()
-                VStack {
-                    TextField("Call", text: $call) {
-                        fccData.addCall(call)
-                    }
-                    Button("Lookup") {
-                        fccData.addCall(call)
-                    }
-                    .disabled(call == "")
+                TextField("Call", text: $call) {
+                    fccData.addCall(call)
+                    selection = call.uppercased()
                 }
-                .frame(width: 100)
-                Spacer()
-            }
+                .frame(maxWidth: 100)
+                Button("+") {
+                    fccData.addCall(call)
+                    selection = call.uppercased()
+                }
+                .disabled(call == "")
+             }
         }
-        .padding([.horizontal, .bottom])
+        .padding()
     }
 }
 

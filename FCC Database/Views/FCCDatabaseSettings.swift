@@ -9,23 +9,28 @@ import SwiftUI
 import MapKit
 
 struct Preferences: View {
+    let selection: String?
+    
     var body: some View {
-        FCCDatabaseSettings()
+        FCCDatabaseSettings(selection: selection)
     }
 }
 
 struct FCCDatabaseSettings: View {
     @EnvironmentObject var fccData: FCCDataViewModel
+
+    var selection: String?
      
     private var nf: NumberFormatter
     private var df: NumberFormatter
     
-    init() {
-        // print ("Settings")
+    init(selection: String?) {
+        self.selection = selection
         nf = NumberFormatter()
         nf.numberStyle = .decimal
         nf.minimumFractionDigits = 6
         df = NumberFormatter()
+        
     }
     
     // geographic center of the lower 48 states (Lebanon, KS)
@@ -101,13 +106,14 @@ struct FCCDatabaseSettings: View {
                 Text("°")
             }
             HStack {
-//                Button ("Use " + (fccData.callRecord?.callsign ?? "Current")) {
-//                    if let coordinates = fccData.coordinates {
-//                        referenceLatitude = coordinates.latitude
-//                        referenceLongitude = coordinates.longitude
-//                    }
-//                }
-//                .disabled(fccData.coordinates == nil)
+                if let selection = selection {
+                    Button ("Use \(selection)") {
+                        if let coordinates = fccData.places[selection]?.coordinates {
+                            referenceLatitude = coordinates.latitude
+                            referenceLongitude = coordinates.longitude
+                        }
+                    }
+                }
                 Button ("Use GPS") {
                     let locationViewModel = LocationViewModel()
 
@@ -203,7 +209,7 @@ struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         let fccData = FCCDataViewModel(preview: true)
         fccData.addCall("W8CR")
-        return FCCDatabaseSettings()
+        return FCCDatabaseSettings(selection: nil)
             .environmentObject(fccData)
     }
 }
