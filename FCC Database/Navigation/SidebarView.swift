@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct SidebarView: View {
+    
+    @Binding var selection: String?
+    @EnvironmentObject var data: FCCDataViewModel
+    
     var body: some View {
-        Text("Sidebar [TBA]")
+        List(selection: $selection) {
+            ForEach(data.places.keys.sorted(), id: \.self) { call in
+                Text(call)
+            }
+        }
     }
 }
 
 struct SidebarView_Previews: PreviewProvider {
     static var previews: some View {
-        SidebarView()
+        SidebarView(selection: .constant(nil))
     }
 }

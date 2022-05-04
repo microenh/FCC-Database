@@ -17,17 +17,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 @main
 struct FCC_DatabaseApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @StateObject private var fccData = FCCData()
+    @StateObject private var fccData = FCCDataViewModel()
     
-    var title: String {
-        fccData.callRecord?.callsign ?? Bundle.main.displayName!
-    }
-
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .navigationTitle(title)
-                .environmentObject(fccData)
+                 .environmentObject(fccData)
         }
         .commands {
             SidebarCommands()

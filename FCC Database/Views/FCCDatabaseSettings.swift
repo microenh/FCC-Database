@@ -15,7 +15,7 @@ struct Preferences: View {
 }
 
 struct FCCDatabaseSettings: View {
-    @EnvironmentObject var fccData: FCCData
+    @EnvironmentObject var fccData: FCCDataViewModel
      
     private var nf: NumberFormatter
     private var df: NumberFormatter
@@ -101,13 +101,13 @@ struct FCCDatabaseSettings: View {
                 Text("°")
             }
             HStack {
-                Button ("Use " + (fccData.callRecord?.callsign ?? "Current")) {
-                    if let coordinates = fccData.coordinates {
-                        referenceLatitude = coordinates.latitude
-                        referenceLongitude = coordinates.longitude
-                    }
-                }
-                .disabled(fccData.coordinates == nil)
+//                Button ("Use " + (fccData.callRecord?.callsign ?? "Current")) {
+//                    if let coordinates = fccData.coordinates {
+//                        referenceLatitude = coordinates.latitude
+//                        referenceLongitude = coordinates.longitude
+//                    }
+//                }
+//                .disabled(fccData.coordinates == nil)
                 Button ("Use GPS") {
                     let locationViewModel = LocationViewModel()
 
@@ -201,8 +201,8 @@ struct FCCDatabaseSettings: View {
 
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
-        let fccData = FCCData(preview: true)
-        fccData.byCallsignWithAddress("W8CR")
+        let fccData = FCCDataViewModel(preview: true)
+        fccData.addCall("W8CR")
         return FCCDatabaseSettings()
             .environmentObject(fccData)
     }

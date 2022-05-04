@@ -19,7 +19,7 @@
 		4D672386276D4FF4008563F8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672380276D4FF4008563F8 /* Parser.swift */; };
 		4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672381276D4FF4008563F8 /* ProcessZip.swift */; };
 		4D67238B276D5005008563F8 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672389276D5005008563F8 /* LocationViewModel.swift */; };
-		4D67238C276D5005008563F8 /* FCCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238A276D5005008563F8 /* FCCData.swift */; };
+		4D67238C276D5005008563F8 /* FCCDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238A276D5005008563F8 /* FCCDataViewModel.swift */; };
 		4D672393276D5016008563F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67238F276D5016008563F8 /* DetailView.swift */; };
 		4D672394276D5016008563F8 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672390276D5016008563F8 /* LicenseView.swift */; };
 		4D672399276D5020008563F8 /* CLLocationCoordinated2D Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */; };
@@ -76,7 +76,7 @@
 		4D672380276D4FF4008563F8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		4D672381276D4FF4008563F8 /* ProcessZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessZip.swift; sourceTree = "<group>"; };
 		4D672389276D5005008563F8 /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
-		4D67238A276D5005008563F8 /* FCCData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCData.swift; sourceTree = "<group>"; };
+		4D67238A276D5005008563F8 /* FCCDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDataViewModel.swift; sourceTree = "<group>"; };
 		4D67238F276D5016008563F8 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4D672390276D5016008563F8 /* LicenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		4D672397276D5020008563F8 /* CLLocationCoordinated2D Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinated2D Extension.swift"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4D672389276D5005008563F8 /* LocationViewModel.swift */,
-				4D67238A276D5005008563F8 /* FCCData.swift */,
+				4D67238A276D5005008563F8 /* FCCDataViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -412,7 +412,7 @@
 				4D672393276D5016008563F8 /* DetailView.swift in Sources */,
 				4D672385276D4FF4008563F8 /* CallDatabase.swift in Sources */,
 				4DD7A9962821463A00750EBE /* SidebarView.swift in Sources */,
-				4D67238C276D5005008563F8 /* FCCData.swift in Sources */,
+				4D67238C276D5005008563F8 /* FCCDataViewModel.swift in Sources */,
 				4D672387276D4FF4008563F8 /* ProcessZip.swift in Sources */,
 				4D672382276D4FF4008563F8 /* ServerConnection.swift in Sources */,
 				4DB46BCC281F082E0054663D /* FCCDatabaseSettings.swift in Sources */,

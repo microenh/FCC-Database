@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var selection: String?
+    
     var body: some View {
         NavigationView {
-            SidebarView()
-            DetailView()
+            SidebarView(selection: $selection)
+            DetailView(selection: $selection)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static var fccData = FCCDataViewModel(preview: true)
     static var previews: some View {
-        let fccData = FCCData(preview: true)
-        ContentView()
+        ContentView(selection: nil)
             .environmentObject(fccData)
 
     }

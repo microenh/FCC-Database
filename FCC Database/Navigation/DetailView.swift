@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct DetailView: View {
-    @EnvironmentObject var fccData: FCCData
+    @EnvironmentObject var fccData: FCCDataViewModel
+    @Binding var selection: String?
     
     @State private var call = ""
 
     var body: some View {
         VStack {
-            LicenseView()
+            LicenseView(selection: $selection)
             HStack {
                 Spacer()
                 VStack {
                     TextField("Call", text: $call) {
-                        fccData.byCallsignWithAddress(call)
+                        fccData.addCall(call)
                     }
                     Button("Lookup") {
-                        fccData.byCallsignWithAddress(call)
+                        fccData.addCall(call)
                     }
                     .disabled(call == "")
                 }
@@ -37,8 +38,8 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let fccData = FCCData(preview: true)
-        DetailView()
+        let fccData = FCCDataViewModel(preview: true)
+        DetailView(selection: .constant(nil))
             .environmentObject(fccData)
     }
 }
