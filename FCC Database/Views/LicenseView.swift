@@ -134,7 +134,7 @@ struct LicenseView: View {
                     MapAnnotation(coordinate: place.coordinates) {
                         Text(place.id)
                             .padding(.horizontal, 5)
-                            .background(Color.brown)
+                            .background(Color.purple)
                             .cornerRadius(10)
                     }
                 }
